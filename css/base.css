@@ -1,0 +1,193 @@
+:root {
+    --white: #fff;
+    --grey: #c6c9cf;
+
+    --background: #333333;
+    --sidebar-background: #17181B;
+    --separate-line: #202226;
+
+    --content-text-font: "Playfair Display", serif;
+    --title-color: #9fdcf5;
+    --paragraph-color: #f0f2f2;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+}
+
+html {
+    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    scroll-behavior: smooth;
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.header-container {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: var(--sidebar-background);
+    overflow: auto;
+    left: 0;
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 999;
+    border-right: 1px solid var(--separate-line);
+}
+
+.header-info img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.header-nav-info-link {
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 45px;
+}
+
+.header-nav-info-link-container {
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    border-bottom: 1px solid var(--separate-line);
+}
+
+.header-nav-info-link-container:hover .header-nav-info-icon .header-nav-info-title {
+    color: var(--white);
+}
+
+.header-nav-info-icon {
+    color: var(--grey);
+    padding-top: 15px;
+}
+
+.header-nav-info-title {
+    color: var(--grey);
+    letter-spacing: 1px;
+    padding-left: 10px;
+    font-weight: 900;
+}
+
+/* Content */
+.content {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    right: 0;
+    width: auto;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    overflow: auto;
+    background-color: var(--background);
+}
+
+.content-container {
+    max-width: 1040px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info-header {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--white);
+}
+
+.info-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--title-color);
+    line-height: 1em;
+}
+
+.info-icon {
+    color: var(--title-color);
+    font-size: 3.0rem;
+}
+
+/* DOWNLOAD RESUME BUTTON */
+.download-resume-btn {
+    display: block;
+    margin-top: 58px;
+    margin-left: 100px;
+    padding: 20px 5px;
+    position: relative;
+    background-color: transparent;
+    border: 2px solid var(--title-color);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    text-align: center;
+}
+
+.download-resume-btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--title-color);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+
+.download-resume-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    overflow: hidden;
+    color: var(--title-color);
+    line-height: 100%;
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 1.2rem;
+    color: #777;
+    font-family: var(--content-text-font);
+}
+
+.header-nav-info-link-container:hover {
+    background-color: #777;
+}
+
+.active {
+    color: var(--white);
+}
+
+.active-background {
+    background-color:  #777;
+}

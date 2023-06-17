@@ -1,0 +1,71 @@
+.project-part {
+    
+}
+
+.project-link {
+    position: relative;
+    display: block;
+    background-color: #2C2D2F;
+    border: 1px solid #222324;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.project-img img {
+    transition: 1s ease;
+    width: 100%;
+    height: 200px;
+}
+
+.project-img img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+
+.project-content {
+    padding: 90px 16px 50px;
+    text-align: center;
+    width: 82%;
+    position: relative;
+    background-color: #2C2D2F;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+}
+
+.project-icon-container {
+    font-size: 5.0rem;
+    margin-top: -72px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.project-title {
+    font-size: 3.0rem;
+    line-height: 40px;
+    text-decoration: none;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.project-icon {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.project-description {
+    color: var(--paragraph-color);
+    font-size: 2.0rem;
+    line-height: 24px;
+}
+
+.express-icon {
+    color: var(--white);
+}
+
+.project-icon-remake {
+    width: 60%;
+    height: 40px;
+}
