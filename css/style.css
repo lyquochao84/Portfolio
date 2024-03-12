@@ -3,44 +3,12 @@
     text-align: center;
     position: relative;
     color: var(--white);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .content-info-title {
-    padding-top: 42vh;
     font-size: 6.2rem;
     font-weight: 900;
     letter-spacing: 2px;
-    animation: show-down 2s ease-in;
-}
-
-.content-info-description {
-    padding-top: 60px;
-    font-size: 2.8rem;
-    font-weight: 300;
-    font-family: var(--content-text-font);
-    letter-spacing: 2px;
-    animation: show-up 2s ease-in;
-}
-
-/* Animation */
-@keyframes show-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes show-up {
-    0% {
-        opacity: 0;
-        transform: translateY(500%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
