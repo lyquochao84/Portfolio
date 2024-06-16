@@ -1,72 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hao Ly</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Cormorant:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <div class="app">
-        <header>
-            <div class="header-container">
-                <div class="header-info">
-                    <img src="./img/Avatar.jpg" alt="">
-                    <div class="header-nav">
-                        <a href="#" class="header-nav-info-link">
-                            <div class="active-background header-nav-info-link-container">
-                                <i class="active header-nav-info-icon fa-solid fa-house"></i>
-                                <h4 class="active header-nav-info-title">HOME</h4>
-                            </div>
-                        </a>
-
-                        <a href="./pages/about.html" class="header-nav-info-link">
-                            <div class="header-nav-info-link-container">
-                                <i class="header-nav-info-icon fa-solid fa-user"></i>
-                                <h4 class="header-nav-info-title">ABOUT ME</h4>
-                            </div>
-                        </a>
-
-                        <a href="./pages/projects.html" class="header-nav-info-link">
-                            <div class="header-nav-info-link-container">
-                                <i class="header-nav-info-icon fa-solid fa-briefcase"></i>
-                                <h4 class="header-nav-info-title">PROJECTS</h4>
-                            </div>
-                        </a>
-
-                        <a href="./pages/contact.html" class="header-nav-info-link">
-                            <div class="header-nav-info-link-container">
-                                <i class="header-nav-info-icon fa-solid fa-envelope"></i>
-                                <h4 class="header-nav-info-title">CONTACT</h4>
-                            </div>
-                        </a>
-
-                    </div>
-                    <div class="footer-container">
-                        <h4 class="footer-text">2024 © Hao Ly</h4>
-                    </div> 
-                </div>
-            </div>
-        </header>
-
-        <div class="content">
-            <div class="content-info">
-                <h1 class="content-info-title">HAO LY</h1>
-                <h3 class="content-info-description">Software Engineer </h3>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hao Ly Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.png">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- PC -->
+      <nav class="header-nav">
+        <ul>
+          <li class="header-nav-item">
+            <a href="#about-me">About Me</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header-nav-item">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="header-nav-btn-wrapper">
+            <a href="">
+              <button class="header-nav-community-btn">
+                Join AlgoSync Community
+              </button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Mobile/Tablet -->
+      <div class="mobile-header">
+        <div class="mobile-header-left">
+          <i id="toggle-header-icon" class="mobile-header-icon fa-solid fa-bars"></i>
+          <ul id='mobile-header-content' class="mobile-header-content">
+            <li class="mobile-header-content-item">
+              <a href="#about-me" class="mobile-header-content-item-link">
+                About Me
+              </a>
+            </li>
+            <li class="mobile-header-content-item">
+              <a href="#projects" class="mobile-header-content-item-link">
+                Projects
+              </a>
+            </li>
+            <li class="mobile-header-content-item">
+              <a href="#contact" class="mobile-header-content-item-link">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>
-
-    <!-- Javascript -->
-    <script src="./js/main.js"></script>
-</body>
+        <div class="mobile-header-right">
+          <button class="mobile-header-nav-community-btn">
+            Join AlgoSync Community
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header: END -->
+    <!-- Content -->
+    <main class="content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-introduce">
+          <span class="hero-introduce-name">Hao Ly</span>
+          <h1 class="hero-introduce-description">Passionate Learner in Tech</h1>
+          <p class="hero-introduce-paragraph">
+            Hello, my name is Hao Ly. I am a guy who is passionate about
+            computer science with the dream of becoming a web + software
+            developer
+          </p>
+          <div class="hero-introduce-btn-wrapper">
+            <a
+              href="./assets/img/Hao_Ly_Resume.pdf"
+              download="Hao_Ly_Resume"
+              class="hero-introduce-btn-download"
+            >
+              Download Resume
+              <i class="fa-solid fa-download"></i>
+            </a>
+            <ul>
+              <li class="hero-introduce-btn-social-media">
+                <a
+                  href="https://www.linkedin.com/in/haolyy/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="hero-introduce-btn-social-media">
+                <a
+                  href="https://github.com/lyquochao84"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="hero-introduce-btn-social-media">
+                <a
+                  href="mailto:kevinly0609@gmail.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="fa-regular fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-img-wrapper">
+          <img class="hero-img" src="./assets/img/Avatar2.jpg" alt="Hao Ly" />
+        </div>
+      </section>
+      <hr />
+      <!-- About Me -->
+      <section id="about-me">
+        <h2 class="about-me-header">About Me</h2>
+        <div class="about-me-introduce">
+          <div class="about-me-description">
+            <h3 class="about-me-background">
+              <i class="about-me-icon fa-solid fa-circle-info"></i>
+              My background
+            </h3>
+            <p class="about-me-description-text">
+              My name is Hao Ly, and I'm currently pursuing a degree in Computer
+              Science at California State University, Fullerton. Technology has
+              always fascinated me, and I find great joy in learning, coding,
+              and immersing myself in books. Psychology and Programming stand
+              out as my favorite genres, reflecting my diverse interests and
+              curiosity about human behavior and software systems alike. As the
+              founder of the AlgoBox Team, I lead a passionate community
+              dedicated to advancing programming knowledge. Our Algolocker
+              application assists students in organizing their LeetCode
+              solutions, streamlining their learning process. Additionally, our
+              AlgoSync community fosters collaboration through blog
+              contributions, which we transform into engaging video content to
+              share insights with a broader audience. My ultimate aspiration is
+              to evolve into a proficient software engineer, leveraging my
+              expertise to benefit the wider community.
+            </p>
+          </div>
+          <div class="about-me-experience">
+            <h3 class="about-me-background about-me-experience-header">
+              <i class="about-me-icon fa-solid fa-pen-to-square"></i>
+              My Experience
+            </h3>
+            <div class="about-me-experience-wrapper">
+              <div class="about-me-experience-item">
+                <p class="about-me-experience-date">06/2024 - Present</p>
+                <p class="about-me-experience-position">Founder | Developer</p>
+                <p class="about-me-experience-company">AlgoSync</p>
+              </div>
+              <div class="about-me-experience-item">
+                <p class="about-me-experience-date">05/2024 - Present</p>
+                <p class="about-me-experience-position">App Developer Intern</p>
+                <p class="about-me-experience-company">
+                  Yiddish Arts and Academics Association of North America
+                </p>
+              </div>
+              <div class="about-me-experience-item">
+                <p class="about-me-experience-date">01/2023 - 05/2024</p>
+                <p class="about-me-experience-position">
+                  Freelance Web Developer
+                </p>
+                <p class="about-me-experience-company">Self-Employed</p>
+              </div>
+              <div class="about-me-experience-item">
+                <p class="about-me-experience-date">02/2024 - 02/2024</p>
+                <p class="about-me-experience-position">Participant</p>
+                <p class="about-me-experience-company">FullyHacks Hackathon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Projects -->
+      <section id="projects">
+        <h2 class="projects-header">Projects</h2>
+        <div class="projects-wrapper">
+          <a href="https://algo-locker.com">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/AlgoLocker.png" alt="AlgoLocker" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">AlgoLocker</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>Typescript</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Next.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>TailwindCSS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Firebase</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>ESLint</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  Algolocker is a user-friendly website designed to help users
+                  organize and manage their LeetCode solutions efficiently. With
+                  Algolocker, users can categorize their solutions by topics,
+                  making it easy to navigate and review specific types of
+                  problems. Each solution entry includes a detailed description,
+                  helpful explanations, and the corresponding code, providing a
+                  comprehensive resource for users to track their progress and
+                  refine their problem-solving skills. Whether you're preparing
+                  for technical interviews or improving your coding abilities,
+                  Algolocker offers a streamlined interface to keep all your
+                  solutions well-organized and easily accessible.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Bookuter">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/Bookuter.png" alt="Bookuter" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">Bookuter</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>Next.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Javascript</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>CSS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Express.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Node.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>MySQL</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  Bookuter is an intuitive website where users can sign up and
+                  log in to their accounts to save their favorite books and read
+                  articles provided by our platform. Users can also purchase
+                  books directly through the website, ensuring a seamless
+                  shopping experience. Additionally, Bookuter offers
+                  personalized recommendations of featured books across various
+                  genres, helping users discover new and exciting reads tailored
+                  to their interests. Whether you're an avid reader or just
+                  looking for your next book, Bookuter provides a comprehensive
+                  and user-friendly environment to enhance your reading journey.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Stop_Touching_Face_App">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img
+                  src="./assets/img/Stop_Touching_Face.png"
+                  alt="Stop_Touching_Face"
+                />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">Stop Touching Face</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>React.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>TensorFlow</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Howler.js</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>CSS</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  Stop Touching Face is an innovative application designed to
+                  help users avoid touching their faces. The app uses custom
+                  voice alerts to warn users whenever their hands come near
+                  their face. Users can train the AI by clicking "start" and
+                  "next" to capture and learn their specific gestures. Once
+                  trained, the app actively monitors and warns users whenever
+                  they attempt to touch their face, promoting healthier habits
+                  and reducing the risk of transferring germs. Stop Touching
+                  Face offers a proactive solution to help maintain good hygiene
+                  and prevent the spread of illnesses.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Sound-Lab">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/Sound_Lab.JPG" alt="Sound Lab" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">Sound Lab</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>React.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>CSS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Express.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Node.JS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Spotify API</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  Sound Lab is a dynamic website where users can log in to their
+                  accounts to select and listen to their favorite songs. Our
+                  platform allows users to create personalized playlists,
+                  enhancing their listening experience. When a user chooses a
+                  song, Sound Lab displays the lyrics in sync with the music,
+                  making it easy to follow along. Additionally, users can search
+                  for any song they desire using the Spotify API, providing
+                  access to a vast library of music. Whether you're curating
+                  your next playlist or enjoying the lyrics of your favorite
+                  tracks, Sound Lab offers a seamless and enriched musical
+                  experience.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Weather_Android_App">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/Weather_App.JPG" alt="Weather App" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">Weather App</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>Java</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>XML</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>OpenWeatherMap API</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Android Studio</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  My Android weather app provides users with the current weather
+                  conditions of their present location, along with a 5-day
+                  weather forecast for that area. Users can also search for
+                  weather updates for any city, both within and outside the US,
+                  to view the current weather and upcoming 5-day forecast. The
+                  app ensures that users stay informed about weather conditions,
+                  whether they are planning their week ahead or checking the
+                  weather for a travel destination. With its user-friendly
+                  interface and comprehensive weather data, the app is a
+                  reliable tool for staying updated on weather conditions
+                  anywhere.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Chatbot">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/Chatbot.png" alt="Chatbot" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">Chatbot</h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>Flask</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Python</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>OpenAI API</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  Our chatbot allows users to input their questions and receive
+                  responses from a predefined set of questions and answers. If a
+                  user's query isn't found in our dataset, the chatbot
+                  seamlessly interacts with the OpenAI API to generate the best
+                  or most accurate response corresponding to their question.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/lyquochao84/Hotel_Booking_UI">
+            <div class="project-detail">
+              <div class="project-image-wrapper">
+                <img src="./assets/img/Hotel_Project.JPG" alt="Hotel_Project" />
+              </div>
+              <div class="project-description">
+                <h3 class="project-description-header">
+                  Hotel Booking Interface
+                </h3>
+                <div class="project-technologies">
+                  <div class="project-technologies-each-box">
+                    <span>HTML</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>CSS</span>
+                  </div>
+                  <div class="project-technologies-each-box">
+                    <span>Javascript</span>
+                  </div>
+                </div>
+                <p class="project-describe">
+                  For my hotel booking interface project, I've collaborated with
+                  my client to revamp their website using HTML, CSS, and
+                  JavaScript, prioritizing a seamless user experience. By
+                  implementing modern UI principles, we've ensured that the
+                  interface is intuitive and visually appealing. The website is
+                  responsive, adapting seamlessly to various screen sizes and
+                  devices, guaranteeing accessibility for all users. With a
+                  focus on usability and aesthetics, this updated interface
+                  enhances the overall booking process, providing guests with a
+                  user-friendly platform to explore and reserve accommodations
+                  effortlessly.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <!-- Contact Me -->
+      <section id="contact">
+        <h2 class="contact-header">Contact Me</h2>
+        <ul class="contact-icons-wrapper">
+          <li class="hero-introduce-btn-social-media">
+            <a
+              href="https://www.linkedin.com/in/haolyy/"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="hero-introduce-btn-social-media">
+            <a
+              href="https://github.com/lyquochao84"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li class="hero-introduce-btn-social-media">
+            <a
+              href="mailto:kevinly0609@gmail.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <p class="contact-footer">Made by Hao Ly @ 2024</p>
+    </main>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/c6fef05e1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Javascript Event -->
+    <script src="/assets/js/script.js"></script>
+  </body>
 </html>
