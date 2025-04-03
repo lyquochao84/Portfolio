@@ -680,6 +680,13 @@
 
 /* Laptop (1024px - 1599px) */
 @media (min-width: 64em) and (max-width: 99.9375em) {
+  .projects-wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    gap: 20px;
+  }
+
   .mobile-header {
     display: none;
   }
